@@ -54,6 +54,16 @@ const Scene = styled.div`
   width: 180px;
   height: 180px;
   perspective: 400px;
+  transition: transform .4s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(1.5);
+  }
 `
 
 const CubeWrapper = styled.div`
@@ -69,8 +79,8 @@ const Face = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 255, 255, 0.5);
-  box-shadow: 0px 0px 80px 10px rgba(0, 255, 255, 0.5);
-  border: 4px solid rgba(0, 255, 255, 0.5);
+  box-shadow: 0px 0px 80px 30px rgba(0, 255, 255, 0.5);
+  border: 4px solid rgba(255, 255, 255, .5);
   color: #FFF;
   line-height: 180px;
   text-align: center;
